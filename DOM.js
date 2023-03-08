@@ -30,21 +30,38 @@
 // }
 
 //get elements by Tag name
-let li = document.getElementsByTagName("li");
-console.log(li);
-console.log(li[2]);
-li[0].textContent="Hello1";
-li[1].textContent="Hello2";
-li[2].textContent="Hello3";
-li[3].textContent="Hello4";
+// let li = document.getElementsByTagName("li");
+// console.log(li);
+// console.log(li[2]);
+// li[0].textContent="Hello1";
+// li[1].textContent="Hello2";
+// li[2].textContent="Hello3";
+// li[3].textContent="Hello4";
 
-li[2].style.backgroundColor = "green";
+// li[2].style.backgroundColor = "green";
 
-for(let i=0;i<li.length;i++)
+// for(let i=0;i<li.length;i++)
+// {
+//     li[i].style.fontWeight="bold";
+// }
+
+//Query Selector
+// let second = document.querySelector('.list-group-item:nth-child(2)')
+// second.style.backgroundColor='green'
+
+// let third = document.querySelector('.list-group-item:nth-child(3)')
+// third.style.display='none'
+
+//Query Selector all
+
+// let second=document.querySelectorAll('.list-group-item')
+// console.log(second)
+// second[1].style.backgroundColor='green'
+
+let odd=document.querySelectorAll('li:nth-child(odd)')
+for(let i=0;i<odd.length;i++)
 {
-    li[i].style.fontWeight="bold";
+    odd[i].style.backgroundColor='green';
 }
-
-
 
 
