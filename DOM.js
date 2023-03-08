@@ -14,19 +14,35 @@
 //console.log(headertitle.textContent);
 
 //get elements by class name
-let classes = document.getElementsByClassName("list-group-item");
-console.log(classes);
-console.log(classes[2]);
-classes[0].textContent="Hello1";
-classes[1].textContent="Hello2";
-classes[2].textContent="Hello3";
-classes[3].textContent="Hello4";
+// let classes = document.getElementsByClassName("list-group-item");
+// console.log(classes);
+// console.log(classes[2]);
+// classes[0].textContent="Hello1";
+// classes[1].textContent="Hello2";
+// classes[2].textContent="Hello3";
+// classes[3].textContent="Hello4";
 
-classes[2].style.backgroundColor = "green";
+// classes[2].style.backgroundColor = "green";
 
-for(let i=0;i<classes.length;i++)
+// for(let i=0;i<classes.length;i++)
+// {
+//     classes[i].style.fontWeight="bold";
+// }
+
+//get elements by Tag name
+let li = document.getElementsByTagName("li");
+console.log(li);
+console.log(li[2]);
+li[0].textContent="Hello1";
+li[1].textContent="Hello2";
+li[2].textContent="Hello3";
+li[3].textContent="Hello4";
+
+li[2].style.backgroundColor = "green";
+
+for(let i=0;i<li.length;i++)
 {
-    classes[i].style.fontWeight="bold";
+    li[i].style.fontWeight="bold";
 }
 
 
